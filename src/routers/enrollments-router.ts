@@ -10,5 +10,4 @@ enrollmentsRouter
   .all("/*", authenticateToken)
   .get("/", getEnrollmentByUser)
   .post("/", validateBody(createEnrollmentSchema), postCreateOrUpdateEnrollment);
-
 export { enrollmentsRouter };
